@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>Welcome Radions<span>.</span></h1>
+                    <h2 class="block">I learn,I Think,I Write</h2>
+                    <h1>Here are my some of <span>CATEOGRIES</span></h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+                <div class="col-xl-2 col-md-4 col-6">
+                    <div class="icon-box">
+                        <i class="ri-store-line"></i>
+                        <h3><a href="/myst">Unsolved<br>Mysteries</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-6 ">
+                    <div class="icon-box">
+                        <i class="ri-bar-chart-box-line"></i>
+                        <h3><a href="/hacking">Hacking &<br>cyber<br>security</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <i class="ri-calendar-todo-line"></i>
+                        <h3><a href="/tech">Science &<br>Tech</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="icon-box">
+                        <i class="ri-paint-brush-line"></i>
+                        <h3><a href="/business">Business model &<br> analysis</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="icon-box">
+                        <i class="ri-database-2-line"></i>
+                        <h3><a href="/other">Other</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+{% endblock content %}

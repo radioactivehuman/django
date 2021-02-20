@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3 class="mb-0">{{post.title}}</h3>
+            <h4>{{post.datetime}}</h4>
+            <p class="card-text mb-auto">{{post.content|safe}}</p>
+        </div>
+    </section>
+</body>
+
+
+
+{% endblock content %}
